@@ -564,3 +564,89 @@ a.shopNow {
     color: #ffd334;
     margin-right: 5px;
 }
+
+div#m-hide {
+    z-index: 99;
+}
+
+.nav-phone{
+    display: none;
+}
+
+@media screen and (max-width: 850px) {
+    
+    .nav-phone{
+        display: block;
+    }
+
+    .logo-main-sec-p {
+        display: none;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .top-nav-sec1 {
+        display: none;
+    }
+
+    .nav-phone {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: #3d464d;
+        padding: 8px;
+    }
+
+    .nav-phone * em.logo-l {
+        background: #fff !important;
+        color: #3d464d;
+    }
+
+    .nav-phone * em.logo-r {
+        color: #fff;
+    }
+
+    .nav-phone * span#my-icons3 {
+        margin: 15px;
+        border: solid 1px #fff;
+        padding: 5px;
+    }
+
+    .slider-seca {
+        display: grid !important;
+        max-width: 100% !important;
+    }
+
+    .slider-seca-l {
+        width: 100%;
+    }
+
+    .slider-seca-r {
+        width: 100%;
+    }
+    
+    .slider-seca {
+        padding: 20px;
+    }
+
+
+    .slider-secb {
+        display: grid;
+    }
+
+    .slider-secb-elm {
+        width: 100%;
+    }
+
+    .slider-secb {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+
+
+
+}
+
