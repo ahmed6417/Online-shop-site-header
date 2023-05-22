@@ -747,6 +747,11 @@ img.cat-sec-item-img {
         display: block;
     }
 
+    .cat-sec-item {
+        display: flex;
+        flex-direction: column;
+    }
+
     .logo-main-sec-p {
         display: none;
     }
