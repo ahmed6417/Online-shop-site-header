@@ -433,24 +433,55 @@ header {
 
 
 .slider-seca-top {
-    padding: 50px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://images.pexels.com/photos/1488463/pexels-photo-1488463.jpeg);
+    padding: 0px;
+    background-color: #000;
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://images.pexels.com/photos/1488463/pexels-photo-1488463.jpeg); */
     background-size: cover;
     text-align: center;
     display: grid;
     align-items: center;
     align-content: center;
+    overflow: hidden;
+    transition: 0.7s
 }
 
 .slider-seca-bott {
-    padding: 50px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://assets.entrepreneur.com/content/3x2/2000/20170731110942-graphicstock-beautiful-young-woman-standing-and-choosing-clothes-in-clothing-store-husr32zsne.jpg);
+    padding: 0px;
+    background-color: #000;
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://assets.entrepreneur.com/content/3x2/2000/20170731110942-graphicstock-beautiful-young-woman-standing-and-choosing-clothes-in-clothing-store-husr32zsne.jpg); */
     background-size: cover;
     text-align: center;
     display: grid;
     align-items: center;
     align-content: center;
+    overflow: hidden;
+    transition: 0.7s
 }
+
+img.slid-img {
+    transition: 0.7s
+
+}
+
+.slider-seca-top:hover > img.slid-img {
+    transform: scale(1.2) rotate(5deg);
+    transition: 0.7s;
+}
+
+.slider-seca-bott:hover > img.slid-img {
+    transform: scale(1.2) rotate(5deg);
+    transition: 0.7s;
+}
+
+
+
+.slider-seca-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 
 .slider-page1 {
     padding: 50px;
@@ -572,6 +603,143 @@ div#m-hide {
 .nav-phone{
     display: none;
 }
+
+h1.cat-sec-h1 {
+    color: #000;
+}
+
+.cat-sec {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 25px;
+}
+
+.cat-sec-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background: #fff;
+}
+
+.cat-sec-item:hover > .cat-sec-item-img {
+    transform: scale(1.2) rotate(-5deg);
+    transition: 0.5s;
+}
+
+.cat-sec-item:hover * .cat-sec-item-img {
+    transform: rotate(-5deg) scale(1.2);
+    transition: 0.5s;
+}
+/* 
+.cat-sec-item-img {
+background: #fff;
+} */
+
+.cat-sec-item-desc {
+    padding: 0px 13px;
+}
+
+.cat-sec-item-desc-h1 {
+    font-size: 18px;
+    font-weight: 600;
+    padding-bottom: 7px;
+}
+
+.cat-sec-item-im {
+    overflow: hidden;
+    background: #fff;
+}
+
+.cat-sec-item {
+    overflow: hidden;
+    cursor: pointer;
+}
+img.cat-sec-item-img {
+    max-width: 100px;
+}
+
+
+.cat-sec-item-img {
+    transition: 0.5s;
+}
+h1.cat-sec-h1 {
+    color: #000;
+    margin-bottom: 35px;
+    width: fit-content;
+}
+
+h1.cat-sec-h1:after {
+    content: "";
+    width: 84%;
+    border-top: dashed 1px #0d0d0d;
+    position: absolute;
+    margin-top: 17px;
+    margin-left: 11px;
+    opacity: 0.25;
+}
+
+
+.cat-sec-item-desc > .cat-sec-item-desc-p1 {
+    color: #000;
+}
+.cat-sec-item-desc > .cat-sec-item-desc-h1 {
+    color: #000;
+}
+
+.cat-sec-item:hover {
+    background: #ffd334;
+    transition: 0.7s;
+}
+
+.cat-sec-item {
+    transition: 0.7s;
+}
+
+
+
+img.slid-img {
+    opacity: 0.5;
+    max-height: 250px;
+    object-fit: cover;
+    width: 100%;
+    object-position: top;
+}
+
+.slid-content {
+    z-index: 1;
+    position: absolute;
+}
+
+.slider-seca-bott {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.categ-sec {
+    max-width: 96%;
+    margin: auto;
+}
+
+
+.cat-sec-item-desc {
+transition: 0.5s;
+}
+
+.cat-sec-item-desc {
+    transition: 0.5s;
+    z-index: 1;
+}
+
+img.cat-sec-item-img {
+    z-index: 0;
+}
+
+
+
+
 
 @media screen and (max-width: 850px) {
     
